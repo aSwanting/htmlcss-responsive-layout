@@ -1,4 +1,4 @@
-/* Default settings */
+/*RESET */
 
 * {
     margin: 0;
@@ -8,7 +8,6 @@
 
 body {
     font-family: 'Open Sans', sans-serif;
-    background-color: #ccd2ee;
 }
 
 ul,
@@ -21,12 +20,16 @@ img {
     width: 100%;
 }
 
+figure img {
+    display: block;
+}
+
 a {
     text-decoration: none;
     color: currentColor;
 }
 
-/* palette colori */
+/* COLOR PALETTE */
 
 :root {
     --blue: #0084FD;
@@ -37,21 +40,25 @@ a {
     --light: #FFFFFF;
 }
 
-/* layouts */
+/* BASE LAYOUT */
 
 .container {
     max-width: 1164px;
     margin: 0 auto;
 }
 
-.container-medium {
+.container-md {
     max-width: 1050px;
     margin: 0 auto;
 }
 
-.container-small {
+.container-sm {
     max-width: 880px;
     margin: 0 auto;
+}
+
+main [class^="container"] {
+    padding: 40px 0;
 }
 
 .row {
@@ -59,33 +66,39 @@ a {
     flex-wrap: wrap;
 }
 
-.col-4 {
+
+
+.col-sm-4 {
     flex-basis: calc((100% / 12) * 4);
 }
 
-.col-6 {
+.col-sm-6 {
     flex-basis: calc((100% / 12) * 6);
 }
 
-.col-8 {
+.col-sm-8 {
     flex-basis: calc((100% / 12) * 8);
 }
 
-.col-12 {
+.col-sm-12 {
     flex-basis: calc((100% / 12) * 12);
 }
 
-/* utility classes */
+/* UTILITY */
 
 .justify-between {
     justify-content: space-between;
 }
 
-.align-items-center {
+.items-center {
     align-items: center;
 }
 
-/* component classes */
+.text-center {
+    text-align: center;
+}
+
+/* COMPONENTS */
 
 .button {
     display: block;
@@ -95,9 +108,16 @@ a {
     background-color: white;
     border-radius: 20px;
     padding: 0 18px;
+    white-space: nowrap;
 }
 
-/* header */
+.btn-blue {
+    background-color: var(--blue);
+    color: white;
+    padding: 0 20px;
+}
+
+/* HEADER */
 
 .page-header {
     background-color: var(--blue);
@@ -124,18 +144,91 @@ a {
     font-size: 24px;
 }
 
+/* HERO */
+
+.hero .row {
+    row-gap: 24px;
+}
+
+.hero [class^="col"] {
+    padding: 0 12px;
+}
+
+.hero-card {
+    background-color: var(--light-blue);
+    border-radius: 20px;
+    min-height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.hero-card__contents {
+    padding: 40px 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.main-card .hero-card__contents,
+.hero-card__img {
+    align-items: flex-start;
+    flex-basis: 100%;
+}
+
+.hero-card__img {
+    padding-top: 0px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.hero-card h3,
+.hero-card i {
+    color: var(--blue);
+}
+
+.hero-card i {
+    font-size: 5rem;
+}
+
+.main-card i {
+    color: white;
+    font-size: initial;
+    padding-right: 8px;
+}
+
+.hero-card p {
+    line-height: 2rem;
+    color: #505050;
+    font-weight: 600;
+}
+
 /* MEDIA QUERIES */
 
 @media screen and (min-width: 576px) {
-    body {
-        background-color: rgb(183, 223, 132);
+    .col-md-4 {
+        flex-basis: calc((100% / 12) * 4);
     }
+
+    .col-md-6 {
+        flex-basis: calc((100% / 12) * 6);
+    }
+
+    .col-md-8 {
+        flex-basis: calc((100% / 12) * 8);
+    }
+
+    .col-md-12 {
+        flex-basis: calc((100% / 12) * 12);
+    }
+
+    .hero-card__img {
+        flex-basis: 70%;
+    }
+
+
 }
 
 @media screen and (min-width: 768px) {
-    body {
-        background-color: rgb(224, 171, 171);
-    }
 
     .navbar-menu {
         display: flex;
@@ -144,26 +237,57 @@ a {
     .burger-menu {
         display: none;
     }
+
+    .main-card .hero-card__contents,
+    .hero-card__img {
+        flex-basis: 50%;
+    }
+
+    .hero-card__contents {
+        padding: 40px 30px;
+    }
+
+    .hero-card__img {
+        padding-top: 40px;
+    }
 }
 
 
 
 
-/* debug */
+/* DEBUG */
 
-.debug .container,
-.debug .container-medium,
-.debug .container-small {
-    border: 1px solid green;
+.debug [class^="container"] {
+    border: 2px solid rgb(91, 238, 91);
     padding: 5px;
 }
 
 .debug .row {
-    border: 1px solid purple;
+    border: 2px solid rgb(252, 156, 252);
     padding: 5px;
 }
 
 .debug [class^="col"] {
-    border: 1px solid orange;
+    border: 2px solid rgb(255, 215, 140);
     padding: 5px;
+}
+
+.debug .hero-card__contents {
+    border: 2px solid red;
+}
+
+.debug {
+    background-color: #272d47;
+}
+
+@media screen and (min-width: 576px) {
+    .debug {
+        background-color: rgb(43, 63, 17);
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .debug {
+        background-color: rgb(60, 46, 80);
+    }
 }
