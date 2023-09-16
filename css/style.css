@@ -67,7 +67,6 @@ main [class^="container"] {
 }
 
 
-
 .col-sm-4 {
     flex-basis: calc((100% / 12) * 4);
 }
@@ -204,11 +203,11 @@ main [class^="container"] {
 
 /* PLANNING */
 
-.planning  [class^="col-"] {
+.planning [class^="col-"] {
     padding: 0 30px;
     display: flex;
     align-items: flex-end;
-} 
+}
 
 .planning .row {
     row-gap: 32px;
@@ -265,6 +264,84 @@ main [class^="container"] {
     justify-content: center;
 }
 
+/* TESTIMONIALS */
+
+.testimonials .row {
+    flex-direction: column;
+    gap: 32px;
+}
+
+.testimonials [class^="col"] {
+    padding: 0 12px;
+}
+
+.testimonials h3 {
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.testimonials h1 {
+    color: var(--purple);
+}
+
+.testimonials-header {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-bottom: 32px;
+}
+
+.testimonials-header h1 {
+    font-size: 42px;
+}
+
+.testimonials-header h3,
+.testimonials-header p {
+    font-size: 18px;
+}
+
+
+.testimonials-card {
+    background-color: var(--purple);
+    padding: 24px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 28px;
+}
+
+.testimonials img {
+    width: 200px;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.testimonial-quote {
+    color: white;
+}
+
+.testimonial-quote blockquote p {
+    margin-bottom: 20px;
+}
+
+.testimonial-quote blockquote footer {
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.testimonial-quote blockquote i:first-of-type {
+    padding-right: 8px;
+}
+
+.testimonial-quote blockquote i:last-of-type {
+    padding-left: 8px;
+}
+
+
+
 
 /* MEDIA QUERIES */
 
@@ -299,6 +376,11 @@ main [class^="container"] {
 
     .planning-card.dark img {
         padding-block: 40px 80px;
+    }
+
+    .testimonials-card {
+        text-align: left;
+        flex-direction: row;
     }
 
 
@@ -341,9 +423,13 @@ main [class^="container"] {
     .hero-card__img {
         padding-top: 40px;
     }
-    
+
     .planning h2 {
         font-size: 32px;
+    }
+
+    .testimonials-card {
+        gap: 62px;
     }
 }
 
