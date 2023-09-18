@@ -286,6 +286,7 @@ main [class^="container"] {
 }
 
 .testimonials h1 {
+    font-size: 32px;
     color: var(--purple);
 }
 
@@ -355,7 +356,7 @@ main [class^="container"] {
     color: white;
     text-align: center;
     margin-bottom: 64px;
-    font-size: 42px;
+    font-size: 32px;
 }
 
 .benefits-card {
@@ -378,6 +379,10 @@ main [class^="container"] {
     margin-bottom: -15px;
 }
 
+.benefits-card h2 {
+    font-size: 20px;
+}
+
 .benefits p {
     line-height: 1.8;
 }
@@ -387,6 +392,62 @@ main [class^="container"] {
 }
 
 
+/* ABOUT US */
+
+.about-us h1 {
+    font-size: 60px;
+    color: var(--purple);
+    margin-bottom: 32px;
+}
+
+.about-us-text p {
+    line-height: 2.5;
+    padding-right: 0;
+}
+
+.about-us-text p:first-of-type {
+    margin-bottom: 32px;
+}
+
+.quote-img {
+    color: var(--purple);
+    font-size: 24px;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+}
+
+.quote-img-wrapper {
+    position: relative;
+}
+
+.quote-img-wrapper i {    
+    position: absolute;
+    line-height: 0.6em;
+    font-size: 50px;
+    top: 0;
+    right: 0;
+}
+
+.quote-img img {
+    max-width: 150px;
+    border-radius: 50%;
+}
+
+.quote-img .button {
+    background-color: var(--purple);
+    font-size: 12px;
+    font-weight: 400;
+    padding: 0 10px;
+    line-height: 28px;
+}
+
+.quote-img .button i {
+    font-size: inherit;
+    padding-right: 5px;
+}
 
 
 
@@ -430,7 +491,25 @@ main [class^="container"] {
         flex-direction: row;
     }
 
+    .benefits-card h2 {
+        font-size: 18px;
+    }
 
+    .quote-img img {
+        max-width: 235px;
+    }
+
+    .quote-img i {   
+        font-size: 50px;
+    }
+
+    .about-us-text p {
+        padding-right: 60px;
+    }    
+
+    .quote-img .button {
+        font-size: 11px;
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -477,6 +556,22 @@ main [class^="container"] {
 
     .testimonials-card {
         gap: 62px;
+    }
+
+    .benefits-card h2 {
+        font-size: 17px;
+    }
+
+    .quote-img img {
+        max-width: 250px;
+    }
+
+    .quote-img i {   
+        font-size: 80px;
+    }  
+
+    .quote-img .button {
+        font-size: 14px;
     }
 }
 
