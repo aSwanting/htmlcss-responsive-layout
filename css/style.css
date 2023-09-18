@@ -64,11 +64,11 @@ main [class^="container"] {
 .row {
     display: flex;
     flex-wrap: wrap;
-    row-gap: 24px;
+    row-gap: 32px;
 }
 
 [class^="col"] {
-    padding: 0 12px;
+    padding: 0 16px;
 }
 
 .col-sm-4 {
@@ -164,6 +164,14 @@ main [class^="container"] {
 }
 
 /* HERO */
+
+.hero .row {
+    row-gap: 24px;
+}
+
+.hero [class^="col"] {
+    padding: 0 12px;
+}
 
 .hero-card {
     background-color: var(--light-blue);
@@ -270,7 +278,6 @@ main [class^="container"] {
 
 .testimonials .row {
     flex-direction: column;
-    row-gap: 32px;
 }
 
 .testimonials h3 {
