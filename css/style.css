@@ -93,6 +93,10 @@ main [class^="container"] {
     justify-content: space-between;
 }
 
+.justify-center {
+    justify-content: center;
+}
+
 .items-center {
     align-items: center;
 }
@@ -449,6 +453,51 @@ main [class^="container"] {
     padding-right: 5px;
 }
 
+/* CTA */
+
+.cta {
+    background-color: var(--purple);
+    text-align: center;
+    color: white;
+}
+
+.cta .col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+.cta h1 {
+    color: var(--yellow);
+    font-size: 54px;
+}
+
+.cta h2 {
+    color: white;
+    font-size: 28px;
+}
+
+.cta h3 {
+    text-transform: uppercase;
+    font-weight: 200;
+    opacity: 0.6;
+}
+
+.cta p {
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.cta .button {
+    color: var(--purple);
+    font-weight: 700;
+    font-size: 12px;
+    padding: 0 40px;
+
+}
+
+
 
 
 /* MEDIA QUERIES */
@@ -509,6 +558,16 @@ main [class^="container"] {
 
     .quote-img .button {
         font-size: 11px;
+    }
+
+    .cta h1 {
+        color: var(--yellow);
+        font-size: 58px;
+    }
+
+    .cta h2 {
+        color: white;
+        font-size: 32px;
     }
 }
 
@@ -572,6 +631,16 @@ main [class^="container"] {
 
     .quote-img .button {
         font-size: 14px;
+    }
+
+    .cta h1 {
+        color: var(--yellow);
+        font-size: 68px;
+    }
+
+    .cta h2 {
+        color: white;
+        font-size: 36px;
     }
 }
 
