@@ -500,8 +500,27 @@ main [class^="container"] {
     text-decoration: underline;
 }
 
+/* FOOTER */
 
+.page-footer {
+    background-color: var(--dark-grey);
+    color: white;
+    font-weight: 300;
+    text-align: center;
+}
 
+.page-footer .container {
+    padding: 50px 50px;
+}
+
+.page-footer .container p:first-of-type{
+    margin-bottom: 50px;
+}
+
+.page-footer a {
+    text-decoration: underline;
+    color: var(--purple);
+}
 
 /* MEDIA QUERIES */
 
