@@ -93,6 +93,10 @@ main [class^="container"] {
     align-items: center;
 }
 
+.self-end {
+    align-self: flex-end;
+} 
+
 .text-center {
     text-align: center;
 }
@@ -218,7 +222,6 @@ main [class^="container"] {
 .planning [class^="col-"] {
     padding: 0 30px;
     display: flex;
-    align-items: flex-end;
 }
 
 .planning .row {
