@@ -99,7 +99,7 @@ main [class^="container"] {
 
 .self-end {
     align-self: flex-end;
-} 
+}
 
 .text-center {
     text-align: center;
@@ -344,6 +344,48 @@ main [class^="container"] {
 .testimonial-quote blockquote i:last-of-type {
     padding-left: 8px;
 }
+
+/* BENEFITS */
+
+.benefits {
+    background-color: var(--purple);
+}
+
+.benefits h1 {
+    color: white;
+    text-align: center;
+    margin-bottom: 64px;
+    font-size: 42px;
+}
+
+.benefits-card {
+    background-color: white;
+    padding: 32px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+}
+
+.benefits-card h1,
+.benefits-card h2 {
+    color: var(--purple);
+}
+
+.benefits-card h1 {
+    font-size: 60px;
+    margin-bottom: -15px;
+}
+
+.benefits p {
+    line-height: 1.8;
+}
+
+.benefits-card .button {
+    background-color: var(--purple);
+}
+
 
 
 
