@@ -141,6 +141,18 @@ main [class^="container"] {
 
 .burger-menu {
     font-size: 24px;
+    fill: white;
+}
+
+.burger-menu path {
+    cursor: pointer;
+    transition: 200ms all ease-in-out;
+    transform-origin: 50% 50%;
+}
+
+.burger-menu:hover path {
+    d: path("m382,32c0-17.7,14.3-32,32-32h2c17.7,0,32,14.3,32,32s-14.3,32-32,32h-2c-17.7,0-32-14.3-32-32Zm-182,161c0-17.7,14.3-32,32-32h2c17.7,0,32,14.3,32,32s-14.3,32-32,32h-2c-17.7,0-32-14.3-32-32Zm-134,159c0,17.7-14.3,32-32,32h-2c-17.7,0-32-14.3-32-32s14.3-32,32-32h2c17.7,0,32,14.3,32,32Z");
+    transform: rotate(1turn);
 }
 
 /* HERO */
