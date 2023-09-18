@@ -494,7 +494,10 @@ main [class^="container"] {
     font-weight: 700;
     font-size: 12px;
     padding: 0 40px;
+}
 
+.cta a {
+    text-decoration: underline;
 }
 
 
