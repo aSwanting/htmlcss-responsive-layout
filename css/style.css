@@ -239,11 +239,11 @@ main [class^="container"] {
 
 .planning-card.dark {
     color: white;
-    gap: 50px;
+    gap: 20px;
 }
 
 .planning-card.dark img {
-    padding-block: 40px 40px;
+    margin-block: 20px 50px;
 }
 
 
@@ -390,7 +390,7 @@ main [class^="container"] {
     }
 
     .planning-card.dark img {
-        padding-block: 40px 80px;
+        margin-block: 40px 80px;
     }
 
     .testimonials-card {
