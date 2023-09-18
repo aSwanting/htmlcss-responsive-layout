@@ -58,14 +58,18 @@ a {
 }
 
 main [class^="container"] {
-    padding: 60px 0;
+    padding: 60px 20px;
 }
 
 .row {
     display: flex;
     flex-wrap: wrap;
+    row-gap: 24px;
 }
 
+[class^="col"] {
+    padding: 0 12px;
+}
 
 .col-sm-4 {
     flex-basis: calc((100% / 12) * 4);
@@ -161,14 +165,6 @@ main [class^="container"] {
 
 /* HERO */
 
-.hero .row {
-    row-gap: 24px;
-}
-
-.hero [class^="col"] {
-    padding: 0 12px;
-}
-
 .hero-card {
     background-color: var(--light-blue);
     border-radius: 20px;
@@ -218,15 +214,6 @@ main [class^="container"] {
 }
 
 /* PLANNING */
-
-.planning [class^="col-"] {
-    padding: 0 30px;
-    display: flex;
-}
-
-.planning .row {
-    row-gap: 32px;
-}
 
 .planning {
     background-color: var(--purple);
@@ -283,11 +270,7 @@ main [class^="container"] {
 
 .testimonials .row {
     flex-direction: column;
-    gap: 32px;
-}
-
-.testimonials [class^="col"] {
-    padding: 0 12px;
+    row-gap: 32px;
 }
 
 .testimonials h3 {
@@ -390,7 +373,7 @@ main [class^="container"] {
     }
 
     .planning-card.dark img {
-        margin-block: 40px 80px;
+        margin-block: 40px 100px;
     }
 
     .testimonials-card {
